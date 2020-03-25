@@ -1,0 +1,7 @@
+{
+  "name": "react-webpack-typescript-2020",
+  "version": "0.1.0",
+  "description": "Simple boilerplate for React + Webpack + Typescript in 2020",
+  "main": "index.js",
+  "license": "MIT"
+}
