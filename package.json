@@ -4,6 +4,9 @@
   "description": "Simple boilerplate for React + Webpack + Typescript in 2020",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config tools/webpack/webpack.config.js"
+  },
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
