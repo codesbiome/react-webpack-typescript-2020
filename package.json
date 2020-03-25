@@ -5,7 +5,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --config tools/webpack/webpack.config.js"
+    "build": "cross-env NODE_ENV=production webpack --config tools/webpack/webpack.prod.js"
   },
   "dependencies": {
     "react": "^16.13.1",
