@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /** Specify ECMAScript target version */
+    "target": "ES6",
+    /** Specify JSX code generation */
+    "jsx": "react",
+    /** Specify module code generation */
+    "module": "ESNext",
+    /** Specifies module resolution strategy */
+    "moduleResolution": "Node",
+    /** Base directory to resolve non-relative module names */
+    "baseUrl": "./",
+    /** Specify path mapping to be computed relative to baseUrl option */
+    "paths": {
+      "@components/*": ["src/components/*"]
+    },
+    /** Allow javascript files to be compiled */
+    "allowJs": true,
+    /** Skip type checking of declaration files */
+    "skipLibCheck": true,
+    /** Emit helpers for runtime babel ecosystem compatibility */
+    "esModuleInterop": true,
+    /** Allow default imports from modules with no default export */
+    "allowSyntheticDefaultImports": true,
+    /** Enable all strict type checking options */
+    "strict": true,
+    /** Disallow inconsistently-cased references to the same file */
+    "forceConsistentCasingInFileNames": true,
+    /** Include modules imported with '.json' extension */
+    "resolveJsonModule": true,
+    /** Unconditionally emit imports for unresolved files */
+    "isolatedModules": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}
