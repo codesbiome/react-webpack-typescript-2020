@@ -107,6 +107,18 @@ const config = options => {
             },
           ],
         },
+        {
+          /** Images (URL) Loader */
+          test: /\.(gif|jpe?g|tiff|png|webp|bmp)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                outputPath: 'images',
+              },
+            },
+          ],
+        },
       ],
     },
 

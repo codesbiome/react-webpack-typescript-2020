@@ -1,5 +1,6 @@
 import React from 'react';
 import { hot } from 'react-hot-loader/root';
+import natureImage from '@static/images/nature.png';
 
 interface AppProps {
   title?: string;
@@ -21,6 +22,7 @@ class App extends React.Component<AppProps, AppState> {
         >
           Counter: {this.state.counter}
         </button>
+        <img src={natureImage} />
       </div>
     );
   }
