@@ -14,7 +14,10 @@ const devConfig = commonWebpack.config({
 
   /** Entry points */
   entry: [
+    /** Patch to keep local component states during HMR */
     'react-hot-loader/patch',
+
+    /** Main Entry File */
     path.join(cwd, commonWebpack.settings.mainEntryFile),
   ],
 
