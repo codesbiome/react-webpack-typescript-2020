@@ -13,7 +13,8 @@
     /** Specify path mapping to be computed relative to baseUrl option */
     "paths": {
       "@components/*": ["src/components/*"],
-      "@styles/*": ["src/styles/*"]
+      "@styles/*": ["src/styles/*"],
+      "@static/*": ["src/static/*"]
     },
     /** Allow javascript files to be compiled */
     "allowJs": true,

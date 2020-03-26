@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url('~@static/fonts/Poppins-Regular.ttf') format('truetype');
+}
+
 body {
   color: green;
+  font-family: 'Poppins';
 }

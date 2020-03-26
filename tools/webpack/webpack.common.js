@@ -34,6 +34,7 @@ const settings = {
   aliases: {
     '@components': 'src/components',
     '@styles': 'src/styles',
+    '@static': 'src/static',
   },
 };
 
@@ -93,6 +94,18 @@ const config = options => {
           /** SASS & SCSS Loader */
           test: /\.s[ac]ss$/i,
           use: ['style-loader', 'css-loader', 'sass-loader'],
+        },
+        {
+          /** Fonts / File Loader */
+          test: /\.(eot|otf|ttf|woff|woff2)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                outputPath: 'fonts',
+              },
+            },
+          ],
         },
       ],
     },
