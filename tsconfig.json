@@ -12,7 +12,8 @@
     "baseUrl": "./",
     /** Specify path mapping to be computed relative to baseUrl option */
     "paths": {
-      "@components/*": ["src/components/*"]
+      "@components/*": ["src/components/*"],
+      "@styles/*": ["src/styles/*"]
     },
     /** Allow javascript files to be compiled */
     "allowJs": true,
@@ -31,6 +32,6 @@
     /** Unconditionally emit imports for unresolved files */
     "isolatedModules": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "declaration.d.ts"],
   "exclude": ["node_modules"]
 }

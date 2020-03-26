@@ -25,9 +25,15 @@ const settings = {
   /** Extensions to resolve */
   extensions: ['.tsx', '.ts', '.js', '.jsx'],
 
-  /** Aliases to resolve */
+  /**
+   * Aliases to resolve
+   *
+   * To have better aliases path intellisense support from VSCode etc editors.
+   * Make sure to add paths of these aliases in 'tsconfig.json' accordingly
+   */
   aliases: {
     '@components': 'src/components',
+    '@styles': 'src/styles',
   },
 };
 
