@@ -40,8 +40,14 @@ const config = options => {
   options.plugins = options.plugins || [];
 
   /** Aliases path creation */
-  for (const name in settings.aliases) {
-    settings.aliases[name] = path.join(cwd, settings.aliases[name]);
+  for (let name in settings.aliases) {
+    let value = settings.aliases[name];
+
+    // Convert src/ to our cwd path
+    if (value && value.startsWith('src/')) value = path.join(cwd, value);
+
+    // Overwrite aliases
+    settings.aliases[name] = value;
   }
 
   /** HTML Template file path */
@@ -94,7 +100,7 @@ const config = options => {
       extensions: ['.tsx', '.ts', '.js', '.jsx'],
 
       /** Aliases to resolve for project folders */
-      alias: settings.aliases,
+      alias: { ...settings.aliases, ...options.alias },
     },
 
     /** A developer tool to enhance debugging */
@@ -108,6 +114,9 @@ const config = options => {
 
     /** Stats to output in console */
     stats: options.stats,
+
+    /** Dev Server */
+    devServer: options.devServer,
   };
 };
 

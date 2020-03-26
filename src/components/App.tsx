@@ -1,9 +1,29 @@
 import React from 'react';
+import { hot } from 'react-hot-loader/root';
 
-class App extends React.Component {
+interface AppProps {
+  title?: string;
+}
+
+interface AppState {
+  counter: number;
+}
+
+class App extends React.Component<AppProps, AppState> {
+  readonly state: AppState = { counter: 0 };
+
   render() {
-    return <div>Application Component</div>;
+    return (
+      <div>
+        Application Components
+        <button
+          onClick={() => this.setState({ counter: this.state.counter + 1 })}
+        >
+          Counter: {this.state.counter}
+        </button>
+      </div>
+    );
   }
 }
 
-export default App;
+export default hot(App);
