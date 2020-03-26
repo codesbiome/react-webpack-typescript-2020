@@ -94,7 +94,7 @@ const config = options => {
     /** Webpack Resolver */
     resolve: {
       /** Folder names or directory paths where to find modules  */
-      //modules: ['node_modules', 'src'],
+      modules: ['node_modules', 'src'],
 
       /** Extensions we want to resolve */
       extensions: ['.tsx', '.ts', '.js', '.jsx'],
