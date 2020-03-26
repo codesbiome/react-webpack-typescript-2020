@@ -78,10 +78,15 @@ const config = options => {
           loader: 'ts-loader',
         },
         {
-          /** Css Stylesheets Loader */
+          /** CSS Stylesheets Loader */
           test: /\.css$/,
           exclude: /node_modules/,
           use: ['style-loader', 'css-loader'],
+        },
+        {
+          /** SASS & SCSS Loader */
+          test: /\.s[ac]ss$/i,
+          use: ['style-loader', 'css-loader', 'sass-loader'],
         },
       ],
     },
