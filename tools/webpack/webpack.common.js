@@ -77,6 +77,12 @@ const config = options => {
           test: /\.tsx?$/,
           loader: 'ts-loader',
         },
+        {
+          /** Css Stylesheets Loader */
+          test: /\.css$/,
+          exclude: /node_modules/,
+          use: ['style-loader', 'css-loader'],
+        },
       ],
     },
 
