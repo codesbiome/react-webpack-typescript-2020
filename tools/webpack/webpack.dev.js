@@ -2,6 +2,7 @@ const path = require('path');
 const cwd = process.cwd();
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ErrorOverlayPlugin = require('error-overlay-webpack-plugin');
 const commonWebpack = require('./webpack.common');
 
 //-------------------------------------
@@ -29,6 +30,9 @@ const devConfig = commonWebpack.config({
 
   /** Plugins for development build */
   plugins: [
+    /** Error Overlay Plugin */
+    new ErrorOverlayPlugin(),
+
     /** Hot Module Replacement Plugin*/
     new webpack.HotModuleReplacementPlugin(),
 
