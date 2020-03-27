@@ -33,6 +33,6 @@
     /** Unconditionally emit imports for unresolved files */
     "isolatedModules": true
   },
-  "include": ["src/**/*", "declaration.d.ts"],
+  "include": ["src/**/*"],
   "exclude": ["node_modules"]
 }
