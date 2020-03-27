@@ -139,7 +139,7 @@ const config = options => {
       modules: ['node_modules', 'src'],
 
       /** Extensions we want to resolve */
-      extensions: ['.tsx', '.ts', '.js', '.jsx'],
+      extensions: settings.extensions,
 
       /** Aliases to resolve for project folders */
       alias: { ...settings.aliases, ...options.alias },
