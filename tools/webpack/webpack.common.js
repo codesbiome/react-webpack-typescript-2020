@@ -142,7 +142,7 @@ const config = options => {
       extensions: settings.extensions,
 
       /** Aliases to resolve for project folders */
-      alias: { ...settings.aliases, ...options.alias },
+      alias: { ...settings.aliases, ...options.aliases },
     },
 
     /** A developer tool to enhance debugging */

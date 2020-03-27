@@ -65,7 +65,7 @@ const devConfig = commonWebpack.config({
   },
 
   /** Aliases to resolve */
-  alias: {
+  aliases: {
     'react-dom': '@hot-loader/react-dom',
   },
 
