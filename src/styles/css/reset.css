@@ -1,3 +1,6 @@
+html,
 body {
-  background: silver;
+  font-size: 16px;
+  margin: 0;
+  height: 100%;
 }

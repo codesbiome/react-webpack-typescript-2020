@@ -4,6 +4,58 @@
 }
 
 body {
-  color: green;
+  background-color: #dbdbdb;
+  color: #333;
   font-family: 'Poppins';
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  margin: 0;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  font-family: inherit;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #6f8b70;
+  border: 0;
+  border-radius: 4px;
+  text-shadow: 0 1px 0 #556e56;
+  outline: 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.95;
+  }
+
+  span {
+    background: #5e7a5f;
+    padding: 0.5rem 0.75rem;
+    margin-right: -0.75rem;
+    margin-left: 0.5rem;
+  }
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  .container {
+    background: #fff;
+    width: 80%;
+    padding: 1rem;
+    border-radius: 6px;
+  }
 }

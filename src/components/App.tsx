@@ -15,14 +15,22 @@ class App extends React.Component<AppProps, AppState> {
 
   render() {
     return (
-      <div>
-        Application Components
+      <div className='container'>
+        <h2>
+          React Webpack Typescript - 2020 <img src={natureImage} width='38px' />
+        </h2>
+        <p>
+          Minimal boilerplate for writing Web Applications using React, Webpack,
+          TypeScript. This project makes use of "latest" packages like `react`,
+          `typescript` with `webpack` to serve the best environment for
+          development.
+        </p>
+        <p>Click below button to update the counter state:</p>
         <button
           onClick={() => this.setState({ counter: this.state.counter + 1 })}
         >
-          Counter: {this.state.counter}
+          Counter <span>{this.state.counter}</span>
         </button>
-        <img src={natureImage} />
       </div>
     );
   }

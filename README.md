@@ -4,6 +4,19 @@ Minimal boilerplate for writing Web Applications using React, Webpack, TypeScrip
 
 This project makes use of "latest" packages like `react`, `typescript` with `webpack` to serve the best environment for development.
 
+<br>
+
+## Core Features
+
+- 🌀 TypeScript Usage
+- 🎨 CSS Loader
+- 🎨 SASS/SCSS Loader
+- 🆎 Fonts Loader
+- 🔗 Image / URL loader
+- 🧰 Custom Aliases for Path
+- 🔱 Webpack & Configuration
+- 🔥 Hot Module Replacement (Live Reload)
+
 <br />
 
 ## Installation
