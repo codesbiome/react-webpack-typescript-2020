@@ -1,8 +1,16 @@
-# React Webpack Typescript (2020)
+# React Webpack Typescript (2020) [Deprecated]
 
 Minimal boilerplate for writing Web Applications using React, Webpack, TypeScript.
 
 This project makes use of "latest" packages like `react`, `typescript` with `webpack` to serve the best environment for development.
+
+<br>
+
+## 🚨 Deprecated 🚨
+
+This repository is outdated and will no longer be receiving any further updates.
+<br>
+If you're looking for an updated version of `React Webpack Typescript boilerplate`, there is a new maintained project available in here: https://github.com/codesbiome/react-webpack-typescript-2021
 
 <br>
 
