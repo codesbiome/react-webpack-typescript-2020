@@ -1,5 +1,9 @@
 # React Webpack Typescript (2020) [Deprecated]
 
+<div class="flash flash-error flash-full border-top-0 text-center text-bold py-2">This repository is Deprecated and will no longer be receiving any further updates.</div>
+
+<br />
+
 Minimal boilerplate for writing Web Applications using React, Webpack, TypeScript.
 <br >
 This project makes use of "latest" packages like `react`, `typescript` with `webpack` to serve the best environment for development.
